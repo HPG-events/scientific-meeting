@@ -1,40 +1,29 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <base href="./HPG-<base href="./">/">
+  <base href="./">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="HPG Scientific Meeting invitation">
-  <title>HPG Scientific Meeting</title>
+  <meta name="description" content="Scientific Meeting Invitation">
+  <title>Scientific Meeting</title>
   <link rel="icon" href="assets/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="intro-locked">
-  <!-- Envelope Intro -->
+
 <div class="envelope-intro" id="envelopeIntro">
-
   <div class="intro-glow"></div>
-
   <p class="intro-caption">A special invitation awaits you</p>
 
-  <button
-    class="envelope-button"
-    id="openInvitation"
-    type="button"
-    aria-label="Open invitation">
-
+  <button class="envelope-button" id="openInvitation" type="button">
     <div class="envelope">
-
       <div class="envelope-back"></div>
 
       <div class="invitation-card">
         <span>YOU ARE INVITED</span>
 
         <strong>
-          HPG Scientific<br>
+          Scientific<br>
           Meeting
         </strong>
 
@@ -49,124 +38,180 @@
       <div class="wax-seal">
         <span>OPEN</span>
       </div>
-
     </div>
-
   </button>
 
   <p class="open-hint">Tap to open</p>
-
 </div>
-  <video autoplay muted loop playsinline id="bg-video" poster="assets/video-poster.jpg"><source src="assets/background.mp4" type="video/mp4"></video>
-  <div class="page-wash"></div>
 
-  <header class="navbar">
-    <a class="brand" href="#top" aria-label="HPG home">
-      <img src="assets/logo.png" class="logo" alt="HPG logo" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
-    </a>
-    <a href="#rsvp" class="nav-link">Confirm attendance</a>
-  </header>
+<video autoplay muted loop playsinline id="bg-video" poster="assets/video-poster.jpg">
+  <source src="assets/background.mp4" type="video/mp4">
+</video>
 
-  <main>
-    <section class="hero" id="top">
-      <div class="orb"></div>
-      <p class="eyebrow reveal">Exclusive scientific gathering · 2026</p>
-      <p class="invitation reveal">You are cordially invited to</p>
-      <h1 class="reveal">HPG <em>Scientific</em><br>Meeting</h1>
-      <p class="lead reveal">Join us for an engaging scientific meeting discussing the latest insights into managing nausea and vomiting during pregnancy.</p>
-      <div class="actions reveal">
-        <a class="btn gold" href="#details">Explore the event ↓</a>
-        <a class="btn outline" id="calendarLink" target="_blank" rel="noopener">Add to calendar</a>
-      </div>
-      <div class="event-strip glass reveal">
-        <div><small>Date</small><strong>Friday, 07 August 2026</strong></div>
-        <div><small>Time</small><strong>05:00 PM</strong></div>
-        <div><small>Venue</small><strong><h2> Qasr Elmashwyat Mansoura </h2></strong></div>
-      </div>
-    </section>
+<div class="page-wash"></div>
 
-    <section class="section countdown-wrap" id="details">
-      <div><span class="kicker">Mark the date</span><h2>The conversation<br>begins in</h2></div>
-      <div class="countdown" id="countdown" aria-label="Countdown to event">
-        <div class="glass"><strong id="days">00</strong><small>Days</small></div>
-        <div class="glass"><strong id="hours">00</strong><small>Hours</small></div>
-        <div class="glass"><strong id="minutes">00</strong><small>Minutes</small></div>
-        <div class="glass"><strong id="seconds">00</strong><small>Seconds</small></div>
-      </div>
-    </section>
+<header class="navbar">
+  <a class="brand" href="#top">
+    <img src="assets/logo.png" class="logo" alt="HPG Logo">
+  </a>
 
-    <section class="section speaker">
-      <div class="portrait">
-        <img src="assets/Prof. Hend Shalaby.jpeg" alt="Prof. Hend Shalaby" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
-        <span hidden>MH</span>
-      </div>
-      <div>
-        <span class="kicker">Guest speaker</span>
-        <h2>Prof. Hend<br>Shalaby</h2>
-        <i class="gold-rule"></i>
-        <div class="glass topic-card">
+  <a href="#rsvp" class="nav-link">Confirm attendance</a>
+</header>
 
-<span class="kicker">
-Scientific Topic
-</span>
+<main>
 
-<h3>
-Nausea and Vomiting During Pregnancy
-</h3>
+<section class="hero" id="top">
 
-</div>
-<p>
-Professor of Obstetrics & Gynecology,
-Head of the Fetal Medicine Unit,
-Mansoura University.
+<p class="eyebrow reveal">Scientific Meeting · 2026</p>
+
+<p class="invitation reveal">
+You are cordially invited to
 </p>
-<div class="tags">
-    <span>Professor of Obs & Gyn.</span>
-    <span>Head of Fetal Medicine Unit</span>
-    <span>Mansoura University</span>
-</div>
-      </div>
-    </section>
 
-    <section class="section venue">
-      <div class="venue-copy glass">
-        <span class="kicker">The venue</span><h2>Qasr Elmashwyat
-<br>Mansoura</h2>
-</h2>
-        <a class="btn gold" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Qasr+Elmashwyat+Mansoura">Open in Google Maps ↗</a>
-      </div>
-      <iframe
-  class="map"
-  title="Qasr Elmashwyat Mansoura Map"
-  src="https://maps.google.com/maps?q=Qasr%20Elmashwyat%20Mansoura&t=&z=17&ie=UTF8&iwloc=&output=embed"
-  width="100%"
-  height="540"
-  style="border:0;"
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade"
-  allowfullscreen>
+<h1 class="reveal">
+Scientific <em>Meeting</em>
+</h1>
+
+<p class="lead reveal">
+Join us for an engaging scientific meeting discussing the latest insights into managing nausea and vomiting during pregnancy.
+</p>
+
+<div class="actions reveal">
+<a class="btn gold" href="#details">Explore the event ↓</a>
+<a class="btn outline" id="calendarLink" target="_blank">Add to calendar</a>
+</div>
+
+<div class="event-strip glass">
+<div><small>Date</small><strong>Friday, 07 August 2026</strong></div>
+<div><small>Time</small><strong>05:00 PM</strong></div>
+<div><small>Venue</small><strong>Qasr Elmashwyat · Mansoura</strong></div>
+</div>
+
+</section>
+
+<section class="section countdown-wrap" id="details">
+<div>
+<span class="kicker">Mark the Date</span>
+<h2>The conversation begins in</h2>
+</div>
+
+<div class="countdown" id="countdown">
+<div class="glass"><strong id="days">00</strong><small>Days</small></div>
+<div class="glass"><strong id="hours">00</strong><small>Hours</small></div>
+<div class="glass"><strong id="minutes">00</strong><small>Minutes</small></div>
+<div class="glass"><strong id="seconds">00</strong><small>Seconds</small></div>
+</div>
+
+</section>
+
+<section class="section speaker">
+
+<div class="portrait">
+<img src="assets/speaker.jpg" alt="Prof. Hend Shalaby">
+</div>
+
+<div>
+
+<span class="kicker">Guest Speaker</span>
+
+<h2>Prof. Hend Shalaby</h2>
+
+<i class="gold-rule"></i>
+
+<h3>Scientific Topic</h3>
+
+<p><strong>Nausea and Vomiting During Pregnancy</strong></p>
+
+<p>
+Professor of Obstetrics &amp; Gynecology<br>
+Head of Fetal Medicine Unit<br>
+Mansoura University
+</p>
+
+<div class="tags">
+<span>Professor of Obs &amp; Gyn.</span>
+<span>Head of Fetal Medicine Unit</span>
+<span>Mansoura University</span>
+</div>
+
+</div>
+
+</section>
+
+<section class="section venue">
+
+<div class="venue-copy glass">
+
+<span class="kicker">Venue</span>
+
+<h2>Qasr Elmashwyat<br>Mansoura</h2>
+
+<a class="btn gold"
+target="_blank"
+href="https://www.google.com/maps/search/?api=1&query=Qasr+Elmashwyat+Mansoura">
+Open in Google Maps
+</a>
+
+</div>
+
+<iframe
+class="map"
+src="https://maps.google.com/maps?q=Qasr%20Elmashwyat%20Mansoura&t=&z=17&ie=UTF8&iwloc=&output=embed"
+loading="lazy">
 </iframe>
 
-    </section>
+</section>
 
-    <section class="section rsvp" id="rsvp">
-      <div><span class="kicker">Your presence matters</span><h2>Kindly confirm<br>your attendance</h2><p>Please respond by 01 August 2026. We look forward to welcoming you.</p></div>
-      <form class="glass" id="rsvpForm">
-        <label>Full name<input name="name" required placeholder="Your full name"></label>
-        <div class="form-row"><label>Email address<input name="email" type="email" required placeholder="name@example.com"></label><label>Phone number<input name="phone" type="tel" required placeholder="+20"></label></div>
-        <label>Will you be attending?<select name="attendance" required><option value="" selected disabled>Select your response</option><option>Yes, I will attend</option><option>Unfortunately, I cannot attend</option></select></label>
-        <button class="btn gold" type="submit">Confirm response</button>
-        <p class="form-note" id="formMessage">See You Soon.</p>
-      </form>
-    </section>
+<section class="section rsvp" id="rsvp">
 
-    <section class="section sponsors">
-      <span class="kicker">With the support of</span>
-      <div><img src="assets/logo.png" alt="HPG"></div>
-    </section>
-  </main>
+<div>
 
-  <footer><span>© 2026 HPG Scientific Meeting</span><span>Cairo · Egypt</span><a href="mailto:events@hpg.com">events@hpg.com</a></footer>
-  <script src="script.js"></script>
+<span class="kicker">Your Presence Matters</span>
+
+<h2>Kindly Confirm Your Attendance</h2>
+
+<p>Please respond before 01 August 2026.</p>
+
+</div>
+
+<form class="glass" id="rsvpForm">
+
+<label>Full Name
+<input name="name" required>
+</label>
+
+<label>Email
+<input type="email" name="email" required>
+</label>
+
+<label>Phone
+<input name="phone" required>
+</label>
+
+<label>Attendance
+<select name="attendance" required>
+<option disabled selected>Select</option>
+<option>Yes, I will attend</option>
+<option>Unfortunately, I cannot attend</option>
+</select>
+</label>
+
+<button class="btn gold">Confirm Response</button>
+
+<p id="formMessage">See you soon.</p>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+<span>© 2026 Scientific Meeting</span>
+<span>Mansoura · Egypt</span>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
