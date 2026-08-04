@@ -1,6 +1,6 @@
 // Edit this date/time if the event changes. Cairo is UTC+3 in August.
-const EVENT_DATE = new Date("2026-08-07T19:00:00+03:00");
-
+const EVENT_DATE =
+new Date("2026-08-07T17:00:00+03:00");
 function updateCountdown() {
   const gap = Math.max(0, EVENT_DATE.getTime() - Date.now());
   const values = {
@@ -16,13 +16,23 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
+const start = new Date("2026-08-07T17:00:00+03:00");
+const end = new Date(start.getTime() + 2 * 60 * 60 * 1000);
+
+function toGoogleDate(date) {
+  return date.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
+}
+
 const calendarParams = new URLSearchParams({
   action: "TEMPLATE",
-  text: "HPG Scientific Meeting",
-  dates: "20260807T160000Z/20260807T190000Z",
-  details: "An exclusive scientific evening with healthcare leaders.",
-  location: "Pyramisa Suites Hotel, Dokki, Giza"
+  text: "Scientific Meeting",
+  dates: `${toGoogleDate(start)}/${toGoogleDate(end)}`,
+  details: "Scientific meeting presented by Prof. Hend Shalaby discussing Nausea and Vomiting During Pregnancy.",
+  location: "Qasr Elmashwyat, Mansoura"
 });
+
+document.getElementById("calendarLink").href =
+  `https://calendar.google.com/calendar/render?${calendarParams}`;
 document.getElementById("calendarLink").href = `https://calendar.google.com/calendar/render?${calendarParams}`;
 
 document.querySelectorAll(".reveal").forEach((element, index) => {
